@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './app-routing.module';
 import {BirthdayModule} from '../birthday/birthday.module'
+import { JueJinModule } from 'src/juejin/juejin.module';
 
 /* （https://www.angular.cn/api/core/NgModule） */
 @NgModule({
@@ -16,6 +17,7 @@ import {BirthdayModule} from '../birthday/birthday.module'
     BrowserModule,
     AppRoutingModule,
     BirthdayModule,
+    JueJinModule,
     RouterModule.forRoot(routes,{ useHash: true })
   ],
   providers: [],//导出，全局注册，任何组件可用
