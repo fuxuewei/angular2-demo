@@ -2,10 +2,12 @@ import { Component } from "@angular/core"
 import { Router } from "@angular/router"
 
 @Component({
-    templateUrl:'./juejin.component.html'
+    selector: 'app-home',
+    templateUrl:'./home.component.html'
 })
 
-export class JueJin {
+export class HomeComponent {
     constructor(private router: Router){
     }
+    title="vv's home"
 }

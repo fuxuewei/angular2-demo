@@ -3,27 +3,28 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { VoteTakerModule } from 'src/voter/votetaker.module';
-import { RouterModule } from '@angular/router';
-import { routes } from './app-routing.module';
-import {BirthdayModule} from '../birthday/birthday.module'
-import { JueJinModule } from 'src/juejin/juejin.module';
-import { CountdownParentModule } from 'src/countdown/countdown-parent.module';
+import { VoteTakerModule } from 'src/app/voter/votetaker.module';
+import { CountdownParentModule } from 'src/app/countdown/countdown-parent.module';
+
+import { BirthdayComponent } from './birthday/birthday.component'
+import { HomeComponent } from 'src/app/home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 // import { CountdownTimerModule } 
 
 /* （https://www.angular.cn/api/core/NgModule） */
 @NgModule({
   declarations: [//声明
-    AppComponent,
+    AppComponent, 
+    PageNotFoundComponent, 
+    BirthdayComponent,
+    HomeComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BirthdayModule,
-    JueJinModule,
     VoteTakerModule,
-    CountdownParentModule,
-    RouterModule.forRoot(routes,{ useHash: true })
+    CountdownParentModule
   ],
   providers: [],//导出，全局注册，任何组件可用
   bootstrap: [AppComponent]//应用的主视图

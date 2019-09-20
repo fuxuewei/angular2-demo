@@ -1,26 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="VV's head" src="https://avatars2.githubusercontent.com/u/32412189?s=460&v=4">
-</div>
+
 <h2>Here are some links to help you to know me : </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/fuxuewei">github</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://juejin.im/user/5d070e336fb9a07f0052dae6">掘金</a></h2>
-  </li>
-  <li>
-    <h2><a title="detials" [routerLink]="['/birthday']">个人资料</a></h2>
-  </li>
-  <li>
-    <h2><a title="votetaker" [routerLink]="['/votetaker']">投票demo</a></h2>
-  </li>
-  <li>
-    <h2><a title="countdownTimer" [routerLink]="['/countdownTimer']">计时器demo</a></h2>
-  </li>
-</ul>
+<button routerLink="/birthday">self information</button>
+<button routerLink="/votetaker">votetaker demo</button>
+<button routerLink="/countdownTimer">countdownTimer demo</button>
+<button routerLink="/sidekicks">Go to sidekicks</button>
 <router-outlet></router-outlet>
